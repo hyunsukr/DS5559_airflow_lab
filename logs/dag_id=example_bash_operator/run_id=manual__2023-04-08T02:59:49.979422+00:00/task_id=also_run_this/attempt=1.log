@@ -1,0 +1,28 @@
+[2023-04-08 02:59:51,881] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_bash_operator.also_run_this manual__2023-04-08T02:59:49.979422+00:00 [queued]>
+[2023-04-08 02:59:51,900] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_bash_operator.also_run_this manual__2023-04-08T02:59:49.979422+00:00 [queued]>
+[2023-04-08 02:59:51,901] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-08 02:59:51,902] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-04-08 02:59:51,904] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-08 02:59:51,939] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): also_run_this> on 2023-04-08 02:59:49.979422+00:00
+[2023-04-08 02:59:51,959] {standard_task_runner.py:52} INFO - Started process 339 to run task
+[2023-04-08 02:59:51,964] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_bash_operator', 'also_run_this', 'manual__2023-04-08T02:59:49.979422+00:00', '--job-id', '6', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_bash_operator.py', '--cfg-path', '/tmp/tmpxl_5lkdx', '--error-file', '/tmp/tmp6maqj35a']
+[2023-04-08 02:59:51,977] {standard_task_runner.py:80} INFO - Job 6: Subtask also_run_this
+[2023-04-08 02:59:52,195] {task_command.py:369} INFO - Running <TaskInstance: example_bash_operator.also_run_this manual__2023-04-08T02:59:49.979422+00:00 [running]> on host a51dc0b874ee
+[2023-04-08 02:59:52,329] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_bash_operator
+AIRFLOW_CTX_TASK_ID=also_run_this
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-08T02:59:49.979422+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-08T02:59:49.979422+00:00
+[2023-04-08 02:59:52,334] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2023-04-08 02:59:52,337] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo "run_id=manual__2023-04-08T02:59:49.979422+00:00 | dag_run=<DagRun example_bash_operator @ 2023-04-08 02:59:49.979422+00:00: manual__2023-04-08T02:59:49.979422+00:00, externally triggered: True>"']
+[2023-04-08 02:59:52,351] {subprocess.py:85} INFO - Output:
+[2023-04-08 02:59:52,355] {subprocess.py:92} INFO - run_id=manual__2023-04-08T02:59:49.979422+00:00 | dag_run=<DagRun example_bash_operator @ 2023-04-08 02:59:49.979422+00:00: manual__2023-04-08T02:59:49.979422+00:00, externally triggered: True>
+[2023-04-08 02:59:52,357] {subprocess.py:96} INFO - Command exited with return code 0
+[2023-04-08 02:59:52,396] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_bash_operator, task_id=also_run_this, execution_date=20230408T025949, start_date=20230408T025951, end_date=20230408T025952
+[2023-04-08 02:59:52,422] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-04-08 02:59:52,454] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
